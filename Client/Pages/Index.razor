@@ -1,0 +1,23 @@
+﻿@page "/"
+<EditForm model="user">
+    <div class="d-flex flex-column">
+        <div class="row">Login Form</div>
+        <div class="row">
+            <input type="email" @bind="user.Email" class="form-control" />
+        </div>
+        <div class="row">
+            <input type="password" @bind="user.Password" class="form-control" />
+        </div>
+        <div class="row">
+            <button class="btn btn-primary" @onclick="Create">Create</button>
+        </div>
+    </div>
+</EditForm>
+
+@code{
+    User user = new User();
+    public void Create()
+    {
+        Console.WriteLine("Hola feo estoy aqui");
+    }
+}

@@ -1,0 +1,6 @@
+D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.csprojAssemblyReference.cache
+D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.AssemblyInfoInputs.cache
+D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.AssemblyInfo.cs
+D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.RazorAssemblyInfo.cache
+D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.RazorAssemblyInfo.cs
