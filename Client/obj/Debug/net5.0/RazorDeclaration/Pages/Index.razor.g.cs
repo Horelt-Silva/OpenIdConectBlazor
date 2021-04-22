@@ -84,6 +84,13 @@ using OpenIdConectBlazor.Client.Shared;
 #nullable disable
 #nullable restore
 #line 11 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+using OpenIdConectBlazor.Client.Repositories;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Shared.Models;
 
 #line default
@@ -101,9 +108,9 @@ using OpenIdConectBlazor.Shared.Models;
 #line 17 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\Index.razor"
       
     User user = new User();
-    public async Task Create()
+    public void Create()
     {
-
+        Console.WriteLine("Hola feo estoy aqui");
     }
 
 #line default

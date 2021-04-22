@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenIdConectBlazor.Client
+namespace OpenIdConectBlazor.Client.Repositories
 {
     public class Program
     {
@@ -20,6 +20,12 @@ namespace OpenIdConectBlazor.Client
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();
+        }
+        private static void ConfigureServices(IServiceCollection services)
+        {
+
+            services.AddOptions();
+            services.AddScoped<IRepositories, Repositorie>();
         }
     }
 }

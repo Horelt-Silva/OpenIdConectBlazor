@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Text;
 
-namespace IdentityServerGoogleAuthentication.Client.Repositories
+namespace OpenIdConectBlazor.Client.Repositories
 {
     public class Repositorie : IRepositories
     {

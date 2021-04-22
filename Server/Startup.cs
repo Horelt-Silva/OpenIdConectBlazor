@@ -6,6 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore; 
+using Microsoft.AspNetCore.Authentication;
+using OpenIdConectBlazor.Server.Context;
 
 namespace OpenIdConectBlazor.Server
 {
@@ -22,9 +26,12 @@ namespace OpenIdConectBlazor.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
             services.AddControllersWithViews();
             services.AddRazorPages();
+            //services.AddEntityFrameworkSqlServer().AddDbContext<ApplicationDbContext>();
+            services.AddAuthentication(options =>options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme
+            ).AddCookie();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +54,7 @@ namespace OpenIdConectBlazor.Server
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

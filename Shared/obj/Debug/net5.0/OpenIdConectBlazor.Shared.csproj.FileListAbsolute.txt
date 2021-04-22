@@ -1,0 +1,15 @@
+D:\IngSoftware\OpenIdConectBlazor\Shared\bin\Debug\net5.0\OpenIdConectBlazor.Shared.deps.json
+D:\IngSoftware\OpenIdConectBlazor\Shared\bin\Debug\net5.0\OpenIdConectBlazor.Shared.runtimeconfig.json
+D:\IngSoftware\OpenIdConectBlazor\Shared\bin\Debug\net5.0\OpenIdConectBlazor.Shared.runtimeconfig.dev.json
+D:\IngSoftware\OpenIdConectBlazor\Shared\bin\Debug\net5.0\OpenIdConectBlazor.Shared.dll
+D:\IngSoftware\OpenIdConectBlazor\Shared\bin\Debug\net5.0\ref\OpenIdConectBlazor.Shared.dll
+D:\IngSoftware\OpenIdConectBlazor\Shared\bin\Debug\net5.0\OpenIdConectBlazor.Shared.pdb
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.csprojAssemblyReference.cache
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.AssemblyInfoInputs.cache
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.AssemblyInfo.cs
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.csproj.CoreCompileInputs.cache
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.dll
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\ref\OpenIdConectBlazor.Shared.dll
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.pdb
+D:\IngSoftware\OpenIdConectBlazor\Shared\obj\Debug\net5.0\OpenIdConectBlazor.Shared.genruntimeconfig.cache

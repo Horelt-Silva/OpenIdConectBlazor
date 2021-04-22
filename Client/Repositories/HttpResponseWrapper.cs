@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Net.Http;
 
-namespace IdentityServerGoogleAuthentication.Client.Repositories
+namespace OpenIdConectBlazor.Client.Repositories
 {
     public class HttpResponseWrapper<T>
     {

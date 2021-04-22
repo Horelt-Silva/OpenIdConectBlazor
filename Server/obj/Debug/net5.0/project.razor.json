@@ -3927,6 +3927,105 @@
         }
       },
       {
+        "HashCode": -512353469,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.FetchData",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -1834005981,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.FetchData",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OpenIdConectBlazor.Client.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1140055031,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Counter",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": 209322069,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Counter",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OpenIdConectBlazor.Client.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -579757357,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Index",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 436319695,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Index",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OpenIdConectBlazor.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -110376613,
         "Kind": "Components.Component",
         "Name": "OpenIdConectBlazor.Client.Shared.MainLayout",
@@ -4138,105 +4237,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "OpenIdConectBlazor.Client.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -579757357,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Index",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 436319695,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Index",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1140055031,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Counter",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 209322069,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Counter",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -512353469,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.FetchData",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1834005981,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.FetchData",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
