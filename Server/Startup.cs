@@ -26,9 +26,10 @@ namespace OpenIdConectBlazor.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+          
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
             //services.AddEntityFrameworkSqlServer().AddDbContext<ApplicationDbContext>();
             services.AddAuthentication(options =>options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme
             ).AddCookie();
@@ -54,6 +55,7 @@ namespace OpenIdConectBlazor.Server
             app.UseStaticFiles();
 
             app.UseRouting();
+
             app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>

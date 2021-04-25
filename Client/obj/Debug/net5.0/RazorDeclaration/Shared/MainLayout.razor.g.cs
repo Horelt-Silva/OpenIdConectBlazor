@@ -132,7 +132,6 @@ using Microsoft.AspNetCore.Components.Authorization;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient httpClient { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigation { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositories repository { get; set; }
     }
 }
 #pragma warning restore 1591

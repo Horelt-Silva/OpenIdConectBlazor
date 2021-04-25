@@ -28,11 +28,12 @@ namespace Server.Controllers
         public async Task<ActionResult<User>> LoginUser(User user)
         {
             //User loggedInUser = await context.User.Where(u => u.Email == user.Email).FirstOrDefaultAsync();
-            User loggedInUser = await context.User.Where(u => u.Email == user.Email).FirstOrDefaultAsync();
+            User loggedInUser = await context.User.Where(u => u.Email == user.Email && u.Password == user.Password).FirstOrDefaultAsync();
             if (loggedInUser != null)
             {
                 //create a claim
-                var claim = new Claim(ClaimTypes.Name, user.Email);
+                var claim = new Claim(ClaimTypes.Name, loggedInUser.Email);
+               
                 //create claimsIdentity
                 var claimsIdentity = new ClaimsIdentity(new[] { claim }, "serverAuth");
                 //create claimsPrincipal
@@ -62,7 +63,8 @@ namespace Server.Controllers
             User currentUser = new User();
             if (User.Identity.IsAuthenticated)
             {
-                currentUser.Email = User.FindFirstValue(ClaimTypes.Name);
+                var email = User.FindFirstValue(ClaimTypes.Name);
+                currentUser = await context.User.Where(u => u.Email == email).FirstOrDefaultAsync();
             }
             return await Task.FromResult(currentUser);
         }

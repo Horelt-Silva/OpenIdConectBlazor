@@ -222,12 +222,12 @@
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
       "OpenIdConectBlazor.Shared.dll": "sha256-fdWorIn6VVNeoeC2onlWjmWqXUuPuVmHiyPYpVYMptQ=",
-      "OpenIdConectBlazor.Client.dll": "sha256-2prKl07xXQQPe4eN+zS+U8mUotjSsZVqNlfoq0bXUSQ="
+      "OpenIdConectBlazor.Client.dll": "sha256-OC4rY52SsmZYTS+amFX3qk2idH++TZY0CApRzrBG2Hs="
     },
     "lazyAssembly": null,
     "pdb": {
       "OpenIdConectBlazor.Shared.pdb": "sha256-OAD9FJ4jAg\/3yNBQoG2FAdno+9KP9amOfApHhb+ItpI=",
-      "OpenIdConectBlazor.Client.pdb": "sha256-rOg5Cpr2mG1OZSwT5aj23FEIwpwMyQ6HF5oVk3eHSX8="
+      "OpenIdConectBlazor.Client.pdb": "sha256-4ygfL014A2n72MtwP3RUdJcu+tbzJXuK4jL6dxX43Q0="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",

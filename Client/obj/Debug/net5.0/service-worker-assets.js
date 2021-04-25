@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-FC2n8USJ4+7IoY4tT1IUrCBh1tu3xafUQQ61XgUdomE=",
+      "hash": "sha256-mtwH41qj2zNU1qGQQke7ouN2pqhWqUCOBr\/gIYsOycU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -897,11 +897,11 @@
       "url": "_framework\/OpenIdConectBlazor.Shared.pdb"
     },
     {
-      "hash": "sha256-2prKl07xXQQPe4eN+zS+U8mUotjSsZVqNlfoq0bXUSQ=",
+      "hash": "sha256-OC4rY52SsmZYTS+amFX3qk2idH++TZY0CApRzrBG2Hs=",
       "url": "_framework\/OpenIdConectBlazor.Client.dll"
     },
     {
-      "hash": "sha256-rOg5Cpr2mG1OZSwT5aj23FEIwpwMyQ6HF5oVk3eHSX8=",
+      "hash": "sha256-4ygfL014A2n72MtwP3RUdJcu+tbzJXuK4jL6dxX43Q0=",
       "url": "_framework\/OpenIdConectBlazor.Client.pdb"
     },
     {
@@ -1869,5 +1869,5 @@
       "url": "OpenIdConectBlazor.Client.bundle.scp.css"
     }
   ],
-  "version": "pr\/OXBXq"
+  "version": "nAvYXByl"
 };

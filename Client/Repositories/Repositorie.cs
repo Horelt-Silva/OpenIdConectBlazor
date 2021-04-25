@@ -10,7 +10,12 @@ namespace OpenIdConectBlazor.Client.Repositories
     public class Repositorie : IRepositories
     {
         private JsonSerializerOptions jsonOptions => new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
-        private HttpClient httpClient = new HttpClient();
+        public HttpClient httpClient = new HttpClient();
+        //public Repositorie(HttpClient httpClient)
+        //{
+        //    this.httpClient = httpClient;
+        //}
+
 
         public Task<HttpResponseWrapper<object>> Delete(string url)
         {

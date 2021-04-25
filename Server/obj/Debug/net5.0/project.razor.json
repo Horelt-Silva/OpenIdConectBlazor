@@ -3927,68 +3927,35 @@
         }
       },
       {
-        "HashCode": 1150743061,
+        "HashCode": -1824519274,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Register",
+        "Name": "OpenIdConectBlazor.Client.App",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Register"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register"
+          "Common.TypeName": "OpenIdConectBlazor.Client.App"
         }
       },
       {
-        "HashCode": 1271032247,
+        "HashCode": 1930438351,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Register",
+        "Name": "OpenIdConectBlazor.Client.App",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Register"
+            "TagName": "OpenIdConectBlazor.Client.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -361444696,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Login",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Login"
-        }
-      },
-      {
-        "HashCode": -1228591271,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Login",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Login",
+          "Common.TypeName": "OpenIdConectBlazor.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4026,39 +3993,6 @@
         }
       },
       {
-        "HashCode": 2041912226,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Profile"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile"
-        }
-      },
-      {
-        "HashCode": -898452545,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Profile"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -512353469,
         "Kind": "Components.Component",
         "Name": "OpenIdConectBlazor.Client.Pages.FetchData",
@@ -4092,35 +4026,121 @@
         }
       },
       {
-        "HashCode": -1824519274,
+        "HashCode": 2041912226,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.App",
+        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Profile"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.App"
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile"
         }
       },
       {
-        "HashCode": 1930438351,
+        "HashCode": -898452545,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.App",
+        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OpenIdConectBlazor.Client.App"
+            "TagName": "OpenIdConectBlazor.Client.Pages.Profile"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.App",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1150743061,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Register",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register"
+        }
+      },
+      {
+        "HashCode": 1271032247,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Register",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OpenIdConectBlazor.Client.Pages.Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 11424096,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Shared.SurveyPrompt",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 1995513587,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Shared.SurveyPrompt",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OpenIdConectBlazor.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4250,59 +4270,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "OpenIdConectBlazor.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 11424096,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Shared.SurveyPrompt",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 1995513587,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Shared.SurveyPrompt",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

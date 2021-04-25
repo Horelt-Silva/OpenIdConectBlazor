@@ -140,15 +140,14 @@ using System.Security.Claims;
 
         if (user.Identity.IsAuthenticated)
         {
-            var claim = user.FindFirst(c => c.Type == "NameIdentifier");
+            var claim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier);
             Console.WriteLine(claim + "aqui estoy");
-            var claim2 = user.FindFirst(c => c.Type == ClaimTypes.Email);
-            Console.WriteLine(claim2);
+
             var id = Convert.ToInt64(claim?.Value);
             Console.WriteLine(id);
 
 
-            var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/{id}");
+            var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);
             if (HttpResponse.Error)
             {
                 var body = HttpResponse.GetBody();
