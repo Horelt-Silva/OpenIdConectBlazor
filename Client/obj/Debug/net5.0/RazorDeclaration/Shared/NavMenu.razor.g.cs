@@ -96,6 +96,13 @@ using OpenIdConectBlazor.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+using OpenIdConectBlazor.Client.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

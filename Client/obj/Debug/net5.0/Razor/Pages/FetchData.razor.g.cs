@@ -94,6 +94,13 @@ using OpenIdConectBlazor.Shared.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 13 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+using OpenIdConectBlazor.Client.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\FetchData.razor"
 using OpenIdConectBlazor.Shared;
 

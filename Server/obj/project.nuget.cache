@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NLiHdzGs62W7svjaPl8Ewe8FJKbEo47RJ48JqXDamBfg1acpjj/VDQoz5TQMXsp5a1tLmZFt+XTRDCoJozkI0g==",
+  "dgSpecHash": "gCbDJM93+XxG86OeT3iL+pi7nbsV3+ktFJuE1F8tZ+I9Puf11aQK7crnjYAeG78M+F1LcOvuuapecuAkHZ0KIw==",
   "success": true,
   "projectFilePath": "D:\\IngSoftware\\OpenIdConectBlazor\\Server\\OpenIdConectBlazor.Server.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

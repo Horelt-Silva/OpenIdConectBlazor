@@ -96,6 +96,20 @@ using OpenIdConectBlazor.Shared.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+using OpenIdConectBlazor.Client.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "D:\IngSoftware\OpenIdConectBlazor\Client\Shared\MainLayout.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
@@ -103,6 +117,22 @@ using OpenIdConectBlazor.Shared.Models;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 34 "D:\IngSoftware\OpenIdConectBlazor\Client\Shared\MainLayout.razor"
+      
+
+    private async Task LogOut()
+    {
+        await httpClient.GetAsync("https://localhost:44357/user/logoutuser");
+        navigation.NavigateTo("/",true);
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient httpClient { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigation { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositories repository { get; set; }
     }
 }
 #pragma warning restore 1591

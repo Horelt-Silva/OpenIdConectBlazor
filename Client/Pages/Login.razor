@@ -1,0 +1,49 @@
+﻿@inject IRepositories repository
+@inject NavigationManager navigation
+@inject IJSRuntime JsRuntime
+@inject ILoginViewModel LoginModel
+
+@page "/"
+
+<EditForm model="user">
+    <div class="d-flex flex-column">
+        <div class="row">Login Form</div>
+        <div class="row">
+            <input type="email" @bind="user.Email" class="form-control" />
+        </div>
+        <div class="row">
+            <input type="password" @bind="user.Password" class="form-control" />
+        </div>
+        <div class="row">
+            <button class="btn btn-primary" @onclick="Create">Login</button>
+        </div>
+    </div>
+</EditForm>
+
+@code{
+    User user = new User();
+    public async Task Create()
+    {
+        //LoginViewModel LoginModel = new LoginViewModel(user);
+        LoginModel.AddUser(user);
+        await LoginModel.LoginUser();
+        navigation.NavigateTo("/profile", true);
+
+        //Uri Uri = new Uri("https://localhost:44357/user/loginuser");
+        //var HttpResponse = await repository.Post<User, User>(Uri.AbsoluteUri, user);
+        //if (HttpResponse.Error)
+        //{
+        //    var body = HttpResponse.GetBody();
+        //    Console.WriteLine(body);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("estas bien");
+        //    var x = HttpResponse.Response;
+        //    Console.WriteLine(x.Email);
+        //    await JsRuntime.InvokeVoidAsync("alert", x.Id);
+        //    navigation.NavigateTo("/profile", true);
+
+        //}
+    }
+}

@@ -96,8 +96,15 @@ using OpenIdConectBlazor.Shared.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 13 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+using OpenIdConectBlazor.Client.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,18 +112,41 @@ using OpenIdConectBlazor.Shared.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\Counter.razor"
-       
-    private int currentCount = 0;
-
-    private void IncrementCount()
+#line 23 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\Login.razor"
+      
+    User user = new User();
+    public async Task Create()
     {
-        currentCount++;
+        //LoginViewModel LoginModel = new LoginViewModel(user);
+        LoginModel.AddUser(user);
+        await LoginModel.LoginUser();
+        navigation.NavigateTo("/profile", true);
+
+        //Uri Uri = new Uri("https://localhost:44357/user/loginuser");
+        //var HttpResponse = await repository.Post<User, User>(Uri.AbsoluteUri, user);
+        //if (HttpResponse.Error)
+        //{
+        //    var body = HttpResponse.GetBody();
+        //    Console.WriteLine(body);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("estas bien");
+        //    var x = HttpResponse.Response;
+        //    Console.WriteLine(x.Email);
+        //    await JsRuntime.InvokeVoidAsync("alert", x.Id);
+        //    navigation.NavigateTo("/profile", true);
+
+        //}
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILoginViewModel LoginModel { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigation { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositories repository { get; set; }
     }
 }
 #pragma warning restore 1591

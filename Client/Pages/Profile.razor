@@ -1,0 +1,68 @@
+@page "/profile"
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@inject IRepositories repository;
+@inject IJSRuntime JsRuntime;
+<EditForm model="user">
+    <div class="d-flex flex-column">
+        <div class="row">Register</div>
+        <div class="row">
+            <input type="text" @bind="user.Id" class="form-control" />
+        </div>
+        <div class="row">
+            <input type="text" @bind="user.FirstName" class="form-control" />
+        </div>
+        <div class="row">
+            <input type="text" @bind="user.Email" class="form-control" />
+        </div>
+        <div class="row">
+            <input type="text" @bind="user.Password" class="form-control" />
+        </div>
+        <div class="row">
+            <button class="btn btn-primary">Guardar</button>
+        </div>
+    </div>
+</EditForm>
+@code{
+    //recuerda que no estoy utilizando el profileview model del video
+
+    [CascadingParameter]
+    public Task<AuthenticationState> authenticationState { get; set; }
+    User user = new User();
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await authenticationState;
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var claim = user.FindFirst(c => c.Type == "NameIdentifier");
+            Console.WriteLine(claim + "aqui estoy");
+            var claim2 = user.FindFirst(c => c.Type == ClaimTypes.Email);
+            Console.WriteLine(claim2);
+            var id = Convert.ToInt64(claim?.Value);
+            Console.WriteLine(id);
+
+
+            var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/{id}");
+            if (HttpResponse.Error)
+            {
+                var body = HttpResponse.GetBody();
+                Console.WriteLine(body);
+            }
+            else
+            {
+                Console.WriteLine("estas bien");
+                var x = HttpResponse.Response;
+                Console.WriteLine(x.Email);
+                await JsRuntime.InvokeVoidAsync("alert", x.Email);
+
+            }
+        }
+
+
+
+    }
+
+
+}

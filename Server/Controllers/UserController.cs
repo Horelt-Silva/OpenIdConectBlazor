@@ -39,6 +39,7 @@ namespace Server.Controllers
                 var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                 //Sing in user
                 await HttpContext.SignInAsync(claimsPrincipal);
+               
             }
             else
             if (loggedInUser == null)
@@ -49,11 +50,11 @@ namespace Server.Controllers
             // return await Task.FromResult();
         }
         [HttpPost("registeruser")]
-        public async Task<ActionResult<string>> Register(User user)
+        public async Task<ActionResult<User>> Register(User user)
         {
             context.Add(user);
             await context.SaveChangesAsync();
-            return "usuario guardado";
+            return user;
         }
         [HttpGet("getcurrentuser")]
         public async Task<ActionResult<User>> GetCurrentUser()
@@ -71,6 +72,12 @@ namespace Server.Controllers
             await HttpContext.SignOutAsync();
             return "Success";
         }
+        [HttpGet("getprofile/{id}")]
+        public async Task<User> GetProfile(int id)
+        {
+            return await context.User.Where(u => u.Id == id).FirstOrDefaultAsync();
+        }
+
     }
 
 

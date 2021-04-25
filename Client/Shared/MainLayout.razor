@@ -1,17 +1,41 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.AspNetCore.Components.Authorization;
+@inherits LayoutComponentBase;
+@inject IRepositories repository;
+@inject NavigationManager navigation;
+@inject HttpClient httpClient;
 
 <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
 
+
     <div class="main">
-        <div class="top-row px-4">
-            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-        </div>
+        <AuthorizeView>
+            <Authorized>
+                <div class="top-row px-4">
+                    <h4><b>Hellos, @context.User.Identity.Name</b></h4>
+                    <button class="btn btn-primary" @onclick="LogOut">Log Out</button>
+                </div>
+            </Authorized>
+            <NotAuthorized>
+                <div class="top-row px-4">
+                    <button class="btn btn-primary">LogIn User</button>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
+
 
         <div class="content px-4">
             @Body
         </div>
     </div>
 </div>
+@code{
+
+    private async Task LogOut()
+    {
+        await httpClient.GetAsync("https://localhost:44357/user/logoutuser");
+        navigation.NavigateTo("/",true);
+    }
+}
