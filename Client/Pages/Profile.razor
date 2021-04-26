@@ -3,23 +3,24 @@
 @using System.Security.Claims
 @inject IRepositories repository;
 @inject IJSRuntime JsRuntime;
+@inject IUserManager UserManager;
 <EditForm model="user">
     <div class="d-flex flex-column">
         <div class="row">Register</div>
         <div class="row">
-            <input type="text" @bind="user.Id" class="form-control" />
+            <input type="text" @bind="User.LastName" class="form-control" />
         </div>
         <div class="row">
-            <input type="text" @bind="user.FirstName" class="form-control" />
+            <input type="text" @bind="User.FirstName" class="form-control" />
         </div>
         <div class="row">
-            <input type="text" @bind="user.Email" class="form-control" />
+            <input type="text" @bind="User.Email" class="form-control" />
         </div>
         <div class="row">
-            <input type="text" @bind="user.Password" class="form-control" />
+            <input type="text" @bind="User.AboutMe" class="form-control" />
         </div>
         <div class="row">
-            <button class="btn btn-primary">Guardar</button>
+            <button class="btn btn-primary" @onclick="Update">Guardar</button>
         </div>
     </div>
 </EditForm>
@@ -28,7 +29,7 @@
 
     [CascadingParameter]
     public Task<AuthenticationState> authenticationState { get; set; }
-    User user = new User();
+    User User = new User();
     protected override async Task OnInitializedAsync()
     {
         var authState = await authenticationState;
@@ -42,26 +43,34 @@
             var id = Convert.ToInt64(claim?.Value);
             Console.WriteLine(id);
 
-
-            var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);
-            if (HttpResponse.Error)
+            var userResponse= await UserManager.GetUser(id);
+            if (userResponse!=null)
             {
-                var body = HttpResponse.GetBody();
-                Console.WriteLine(body);
+                User =(User)userResponse;
             }
-            else
-            {
-                Console.WriteLine("estas bien");
-                var x = HttpResponse.Response;
-                Console.WriteLine(x.Email);
-                await JsRuntime.InvokeVoidAsync("alert", x.Email);
+            //user = (User)x;
+            //var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);
+            //if (HttpResponse.Error)
+            //{
+            //    var body = HttpResponse.GetBody();
+            //    Console.WriteLine(body);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("estas bien");
+            //    var x = HttpResponse.Response;
+            //    Console.WriteLine(x.Email);
+            //    await JsRuntime.InvokeVoidAsync("alert", x.Email);
 
-            }
+            //}
         }
-
 
 
     }
 
+    private async Task Update()
+    {
+        await UserManager.UpdateUser(User);
+    }
 
 }

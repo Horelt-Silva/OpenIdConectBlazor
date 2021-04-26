@@ -10,12 +10,15 @@ namespace OpenIdConectBlazor.Client.Repositories
     public class Repositorie : IRepositories
     {
         private JsonSerializerOptions jsonOptions => new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
-        public HttpClient httpClient = new HttpClient();
-        //public Repositorie(HttpClient httpClient)
-        //{
-        //    this.httpClient = httpClient;
-        //}
-
+        public HttpClient HttpClient { get; set; }
+        // public Repositorie(HttpClient httpClient)
+        // {
+        //     this.httpClient = httpClient;
+        // }
+        public void AddHttpClient(HttpClient httpClient)
+        {
+            HttpClient = httpClient;
+        }
 
         public Task<HttpResponseWrapper<object>> Delete(string url)
         {
@@ -25,7 +28,7 @@ namespace OpenIdConectBlazor.Client.Repositories
         public async Task<HttpResponseWrapper<T>> Get<T>(string url)
         {
 
-            var responseHttp = await httpClient.GetAsync(url);
+            var responseHttp = await this.HttpClient.GetAsync(url);
             if (responseHttp.IsSuccessStatusCode)
             {
                 var response = await DeserializeResponse<T>(responseHttp, jsonOptions);
@@ -36,12 +39,16 @@ namespace OpenIdConectBlazor.Client.Repositories
                 return new HttpResponseWrapper<T>(default, true, responseHttp);
             }
         }
-
+        public async Task  Get(string url)
+        {
+            var responseHttp = await this.HttpClient.GetAsync(url);
+         
+        }
         public async Task<HttpResponseWrapper<object>> Post<T>(string url, T enviar)
         {
             var enviarJSON = JsonSerializer.Serialize(enviar);
             var enviarContent = new StringContent(enviarJSON, Encoding.UTF8, "application/json");
-            var responseHttp = await httpClient.PostAsync(url, enviarContent);
+            var responseHttp = await this.HttpClient.PostAsync(url, enviarContent);
             return new HttpResponseWrapper<object>(null, !responseHttp.IsSuccessStatusCode, responseHttp);
         }
 
@@ -49,7 +56,7 @@ namespace OpenIdConectBlazor.Client.Repositories
         {
             var enviarJSON = JsonSerializer.Serialize(enviar);
             var enviarContent = new StringContent(enviarJSON, Encoding.UTF8, "application/json");
-            var responseHttp = await httpClient.PostAsync(url, enviarContent);
+            var responseHttp = await this.HttpClient.PostAsync(url, enviarContent);
             if (responseHttp.IsSuccessStatusCode)
             {
                 var response = await DeserializeResponse<TResponse>(responseHttp, jsonOptions);
@@ -61,9 +68,12 @@ namespace OpenIdConectBlazor.Client.Repositories
             }
         }
 
-        public Task<HttpResponseWrapper<object>> Put<T>(string url, T enviar)
+        public async Task<HttpResponseWrapper<object>> Put<T>(string url, T enviar)
         {
-            throw new System.NotImplementedException();
+            var enviarJSON = JsonSerializer.Serialize(enviar);
+            var enviarContent = new StringContent(enviarJSON, Encoding.UTF8, "application/json");
+            var responseHttp = await this.HttpClient.PutAsync(url, enviarContent);
+            return new HttpResponseWrapper<object>(null, !responseHttp.IsSuccessStatusCode, responseHttp);
         }
 
         private async Task<T> DeserializeResponse<T>(HttpResponseMessage httpResponse, JsonSerializerOptions jsonSerializerOptions)

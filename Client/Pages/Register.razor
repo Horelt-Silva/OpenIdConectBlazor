@@ -1,6 +1,7 @@
 ﻿@page "/counter"
 @inject IRepositories repository;
 @inject NavigationManager navigation;
+@inject IUserManager UserManager;
 
 <EditForm model="user">
     <div class="d-flex flex-column">
@@ -20,34 +21,7 @@
     User user = new User();
     public async Task Create()
     {
-        Uri Uri = new Uri("https://localhost:44357/user/registeruser");
-        var HttpResponse = await repository.Post<User>(Uri.AbsoluteUri, user);
-        if (HttpResponse.Error)
-        {
-            var body = HttpResponse.GetBody();
-            Console.WriteLine(body);
-        }
-        else
-        {
-            Console.WriteLine("estas bien");
-            Console.WriteLine(HttpResponse.HttpResponseMessage);
-            navigation.NavigateTo("/");
-
-
-        }
+        await UserManager.AddUser(user, ()=>  this.navigation.NavigateTo("/"));
     }
+
 }
-@* <h1>Counter</h1>
-
-    <p>Current count: @currentCount</p>
-
-    <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-    @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-    currentCount++;
-    }
-    } *@

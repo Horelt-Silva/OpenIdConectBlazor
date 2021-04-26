@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -361444696,
+        "HashCode": -1824519274,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Login",
+        "Name": "OpenIdConectBlazor.Client.App",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Login"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Login"
+          "Common.TypeName": "OpenIdConectBlazor.Client.App"
         }
       },
       {
-        "HashCode": -1228591271,
+        "HashCode": 1930438351,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Login",
+        "Name": "OpenIdConectBlazor.Client.App",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Login"
+            "TagName": "OpenIdConectBlazor.Client.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Login",
+          "Common.TypeName": "OpenIdConectBlazor.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -107,35 +107,35 @@
         }
       },
       {
-        "HashCode": 2041912226,
+        "HashCode": -361444696,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
+        "Name": "OpenIdConectBlazor.Client.Pages.Login",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Profile"
+            "TagName": "Login"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile"
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Login"
         }
       },
       {
-        "HashCode": -898452545,
+        "HashCode": -1228591271,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
+        "Name": "OpenIdConectBlazor.Client.Pages.Login",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Profile"
+            "TagName": "OpenIdConectBlazor.Client.Pages.Login"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Login",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -173,35 +173,35 @@
         }
       },
       {
-        "HashCode": -1824519274,
+        "HashCode": 2041912226,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.App",
+        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Profile"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.App"
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile"
         }
       },
       {
-        "HashCode": 1930438351,
+        "HashCode": -898452545,
         "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.App",
+        "Name": "OpenIdConectBlazor.Client.Pages.Profile",
         "AssemblyName": "OpenIdConectBlazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "OpenIdConectBlazor.Client.App"
+            "TagName": "OpenIdConectBlazor.Client.Pages.Profile"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.App",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

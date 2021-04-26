@@ -3,6 +3,7 @@
 @* @inject IRepositories repository; *@
 @inject NavigationManager navigation;
 @inject HttpClient httpClient;
+@inject IUserManager UserManager;
 
 <div class="page">
     <div class="sidebar">
@@ -35,7 +36,7 @@
 
     private async Task LogOut()
     {
-        await httpClient.GetAsync("https://localhost:44357/user/logoutuser");
-        navigation.NavigateTo("/",true);
+
+       await UserManager.LogOutUser(() => navigation.NavigateTo("/", true));
     }
 }

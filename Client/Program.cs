@@ -25,7 +25,8 @@ namespace OpenIdConectBlazor.Client.Repositories
             //builder.Services.AddHttpClient<ILoginViewModel, LoginViewModel>(
             //   "cliente 1", cliente => cliente.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
             builder.Services.AddScoped<IRepositories, Repositorie>();
-          
+            builder.Services.AddScoped<IUserManager, UserManager>();
+
             builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             await builder.Build().RunAsync();
         }

@@ -14,6 +14,9 @@
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-VUylFBr1e5Fa+IE1BebNrQhZSNQaweOyVi12K0HI4l4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-PB7RGjC0vOlTOWVDePtyjOmt1Cy+7e1pakU+tclFWuw=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-4GQ3G2Qv9UJTEcBQwvEL+Z51CpBjbgL7iG3tevRFLJc=",
+      "Microsoft.AspNetCore.Http.Abstractions.dll": "sha256-qFKmKNr9iAZiZxOVvLJBfMhkKfDy1GvY81fHh1hiphU=",
+      "Microsoft.AspNetCore.Http.Extensions.dll": "sha256-dsGZ+sGJdrYngMg72CIF31THFtl6ovcKTjtGtj9orn8=",
+      "Microsoft.AspNetCore.Http.Features.dll": "sha256-J2xQUZ4BD6tsrQkvGS5HDQfkTGMzmaS76TA9nJrtCpg=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-jB89nHfDKh5Qw5L3QYLKim3zIRZlFEPTtlMHt4hnYME=",
       "Microsoft.Data.SqlClient.dll": "sha256-b3VthT+G+1PEq1MmOISwOC8nsYR60+3otiX74sQDynQ=",
       "Microsoft.EntityFrameworkCore.dll": "sha256-KjSF3qDLLf3P0I7goCi9JRdnpO92N3lszKBbLR4O0Go=",
@@ -46,6 +49,7 @@
       "Microsoft.IdentityModel.Tokens.dll": "sha256-yw2gbAP1YoJyRl0DV5LweVRPuzIlwyebuvv5tZBDT34=",
       "Microsoft.JSInterop.dll": "sha256-Giz1JvBiSQH0QF96qODveJMip7exQTDFunFNTkGgPsc=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-w0G2c9HerfjA2TOs+L4Ufnrt9MsR8b+nLA5\/yt+ytxg=",
+      "Microsoft.Net.Http.Headers.dll": "sha256-P66ftDrXwc6ayND8uYzIk0CPQy1GjNZAPHx9RMhi3V4=",
       "Microsoft.Win32.SystemEvents.dll": "sha256-56MWX7GCuiW+O0EPzkUo0jj6T\/mhpVB6x+UFQtaS2qE=",
       "Newtonsoft.Json.dll": "sha256-etsgJYQb32kqVnEuCK\/nXhcwxx1keKj+1XWs1DJRpmI=",
       "System.Configuration.ConfigurationManager.dll": "sha256-Rmj4lST8tNcZUOCtfg1W5eXbLHDjla1J99tqgWTMUNY=",
@@ -222,12 +226,12 @@
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
       "OpenIdConectBlazor.Shared.dll": "sha256-fdWorIn6VVNeoeC2onlWjmWqXUuPuVmHiyPYpVYMptQ=",
-      "OpenIdConectBlazor.Client.dll": "sha256-OC4rY52SsmZYTS+amFX3qk2idH++TZY0CApRzrBG2Hs="
+      "OpenIdConectBlazor.Client.dll": "sha256-Q6lmdHBhfW+t4KJZVTeQih3YRw5Kgoez+vHIvHVeaug="
     },
     "lazyAssembly": null,
     "pdb": {
       "OpenIdConectBlazor.Shared.pdb": "sha256-OAD9FJ4jAg\/3yNBQoG2FAdno+9KP9amOfApHhb+ItpI=",
-      "OpenIdConectBlazor.Client.pdb": "sha256-4ygfL014A2n72MtwP3RUdJcu+tbzJXuK4jL6dxX43Q0="
+      "OpenIdConectBlazor.Client.pdb": "sha256-I3V4Ebt7DiVoCGJ7aNzjQXkvQI5ok8eA6k1Edcm6f7o="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",

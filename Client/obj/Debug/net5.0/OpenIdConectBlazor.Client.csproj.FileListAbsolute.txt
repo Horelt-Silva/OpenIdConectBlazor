@@ -720,3 +720,15 @@ D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\ref\OpenIdConectBlazor
 D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\OpenIdConectBlazor.Client.pdb
 D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\serviceworkers\wwwroot\service-worker.js
 D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\service-worker-assets.js
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Abstractions.dll.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Extensions.dll.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Features.dll.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Extensions.dll
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Features.dll
+D:\IngSoftware\OpenIdConectBlazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.Net.Http.Headers.dll
+D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\build-gz\H33Wrz6p.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\build-gz\7kJYhNnn.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\build-gz\bS9LVykc.gz
+D:\IngSoftware\OpenIdConectBlazor\Client\obj\Debug\net5.0\build-gz\H0TO+UfN.gz

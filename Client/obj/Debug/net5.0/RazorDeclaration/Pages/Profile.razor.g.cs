@@ -13,105 +13,105 @@ namespace OpenIdConectBlazor.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 1 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 2 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 3 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 4 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 5 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 6 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 7 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 8 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 9 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 10 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 11 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client.Repositories;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 12 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Shared.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 13 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
+#line 2 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
+#line 3 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
 using System.Security.Claims;
 
 #line default
@@ -126,13 +126,13 @@ using System.Security.Claims;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "D:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
+#line 27 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
       
     //recuerda que no estoy utilizando el profileview model del video
 
     [CascadingParameter]
     public Task<AuthenticationState> authenticationState { get; set; }
-    User user = new User();
+    User User = new User();
     protected override async Task OnInitializedAsync()
     {
         var authState = await authenticationState;
@@ -146,32 +146,41 @@ using System.Security.Claims;
             var id = Convert.ToInt64(claim?.Value);
             Console.WriteLine(id);
 
-
-            var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);
-            if (HttpResponse.Error)
+            var userResponse= await UserManager.GetUser(id);
+            if (userResponse!=null)
             {
-                var body = HttpResponse.GetBody();
-                Console.WriteLine(body);
+                User =(User)userResponse;
             }
-            else
-            {
-                Console.WriteLine("estas bien");
-                var x = HttpResponse.Response;
-                Console.WriteLine(x.Email);
-                await JsRuntime.InvokeVoidAsync("alert", x.Email);
+            //user = (User)x;
+            //var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);
+            //if (HttpResponse.Error)
+            //{
+            //    var body = HttpResponse.GetBody();
+            //    Console.WriteLine(body);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("estas bien");
+            //    var x = HttpResponse.Response;
+            //    Console.WriteLine(x.Email);
+            //    await JsRuntime.InvokeVoidAsync("alert", x.Email);
 
-            }
+            //}
         }
-
 
 
     }
 
+    private async Task Update()
+    {
+        await UserManager.UpdateUser(User);
+    }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager UserManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositories repository { get; set; }
     }

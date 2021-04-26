@@ -79,7 +79,19 @@ namespace Server.Controllers
         {
             return await context.User.Where(u => u.Id == id).FirstOrDefaultAsync();
         }
+        [HttpPut("updateprofile")]
+        public async Task<User> UpdateProfile(User user)
+        {
+            User userToUpdate = await context.User.Where(u => u.Id == user.Id).FirstOrDefaultAsync();
 
+            userToUpdate.FirstName = user.FirstName;
+            userToUpdate.LastName = user.LastName;
+            userToUpdate.Email = user.Email;
+            userToUpdate.AboutMe = user.AboutMe;
+
+            await context.SaveChangesAsync();
+            return await Task.FromResult(user);
+        }
     }
 
 

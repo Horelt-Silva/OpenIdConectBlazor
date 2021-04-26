@@ -4,6 +4,7 @@
 @using Microsoft.AspNetCore.Components.Authorization
 @*@inject ILoginViewModel LoginModel*@
 @inject IRepositories repository;
+@inject IUserManager UserManager;
 
 @page "/"
 
@@ -27,29 +28,34 @@
     //[CascadingParameter]
     //public Task<AuthenticationState> authenticationState { get; set; }
 
+    //public async Task Create()
+    //{
+    //    ////LoginViewModel LoginModel = new LoginViewModel(user);
+    //    //LoginModel.AddUser(user);
+    //    //await LoginModel.LoginUser();
+    //    //navigation.NavigateTo("/profile", true);
+    //    //var authState = await authenticationState;
+    //    Uri Uri = new Uri("https://localhost:44357/user/loginuser");
+    //    var HttpResponse = await repository.Post<User, User>(Uri.AbsoluteUri, user);
+    //    if (HttpResponse.Error)
+    //    {
+    //        var body = HttpResponse.GetBody();
+    //        Console.WriteLine(body);
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine("estas bien");
+    //        var x = HttpResponse.Response;
+    //        //authState.User = HttpResponse.Response;
+    //        Console.WriteLine(x.Email);
+    //        await JsRuntime.InvokeVoidAsync("alert", x.Id);
+    //        navigation.NavigateTo("/profile", true);
+
+    //    }
+    //}
     public async Task Create()
     {
-        ////LoginViewModel LoginModel = new LoginViewModel(user);
-        //LoginModel.AddUser(user);
-        //await LoginModel.LoginUser();
-        //navigation.NavigateTo("/profile", true);
-        //var authState = await authenticationState;
-        Uri Uri = new Uri("https://localhost:44357/user/loginuser");
-        var HttpResponse = await repository.Post<User, User>(Uri.AbsoluteUri, user);
-        if (HttpResponse.Error)
-        {
-            var body = HttpResponse.GetBody();
-            Console.WriteLine(body);
-        }
-        else
-        {
-            Console.WriteLine("estas bien");
-            var x = HttpResponse.Response;
-            //authState.User = HttpResponse.Response;
-            Console.WriteLine(x.Email);
-            await JsRuntime.InvokeVoidAsync("alert", x.Id);
-            navigation.NavigateTo("/profile", true);
-
-        }
+        await UserManager.LoginUser(user, ()=>this.navigation.NavigateTo("/profile", true));
     }
+
 }

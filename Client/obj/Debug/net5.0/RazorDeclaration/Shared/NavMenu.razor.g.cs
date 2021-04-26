@@ -13,91 +13,91 @@ namespace OpenIdConectBlazor.Client.Shared
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 1 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 2 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 3 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 4 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 5 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 6 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 7 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 8 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 9 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 10 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 11 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client.Repositories;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 12 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Shared.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "D:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
+#line 13 "d:\IngSoftware\OpenIdConectBlazor\Client\_Imports.razor"
 using OpenIdConectBlazor.Client.ViewModels;
 
 #line default
@@ -111,7 +111,7 @@ using OpenIdConectBlazor.Client.ViewModels;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "D:\IngSoftware\OpenIdConectBlazor\Client\Shared\NavMenu.razor"
+#line 28 "d:\IngSoftware\OpenIdConectBlazor\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
