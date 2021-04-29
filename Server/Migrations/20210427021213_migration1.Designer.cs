@@ -10,8 +10,8 @@ using OpenIdConectBlazor.Server.Context;
 namespace OpenIdConectBlazor.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210422154740_migracion1")]
-    partial class migracion1
+    [Migration("20210427021213_migration1")]
+    partial class migration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

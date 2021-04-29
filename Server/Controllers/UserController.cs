@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using OpenIdConectBlazor.Server;
 using OpenIdConectBlazor.Server.Context;
 using OpenIdConectBlazor.Shared;
 using OpenIdConectBlazor.Shared.Models;
@@ -27,6 +29,7 @@ namespace Server.Controllers
         [HttpPost("loginuser")]
         public async Task<ActionResult<User>> LoginUser(User user)
         {
+            //user.Password = Utility.Encrypt(user.Password);
             //User loggedInUser = await context.User.Where(u => u.Email == user.Email).FirstOrDefaultAsync();
             User loggedInUser = await context.User.Where(u => u.Email == user.Email && u.Password == user.Password).FirstOrDefaultAsync();
             if (loggedInUser != null)
@@ -63,8 +66,20 @@ namespace Server.Controllers
             User currentUser = new User();
             if (User.Identity.IsAuthenticated)
             {
-                var email = User.FindFirstValue(ClaimTypes.Name);
+                var email = User.FindFirstValue(ClaimTypes.Email);
                 currentUser = await context.User.Where(u => u.Email == email).FirstOrDefaultAsync();
+                Console.WriteLine(currentUser);
+                if (currentUser == null)
+                {
+                    currentUser = new User();
+                    //currentUser.Id = context.User.Max(user => user.Id) + 1;
+                    currentUser.Id = context.User.Max(user => user.Id) + 1;
+                    currentUser.Email = User.FindFirstValue(ClaimTypes.Email);
+                    //currentUser.Source = "EXTL";
+                    context.User.Add(currentUser);
+                    await context.SaveChangesAsync();
+
+                }
             }
             return await Task.FromResult(currentUser);
         }
@@ -91,6 +106,12 @@ namespace Server.Controllers
 
             await context.SaveChangesAsync();
             return await Task.FromResult(user);
+        }
+        [HttpGet("GoogleSignIn")]
+        public async Task GoogleSignIn()
+        {
+            await HttpContext.ChallengeAsync(GoogleDefaults.AuthenticationScheme,
+                new AuthenticationProperties { RedirectUri="/profile"});
         }
     }
 

@@ -32,7 +32,15 @@ namespace OpenIdConectBlazor.Server
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
             //services.AddEntityFrameworkSqlServer().AddDbContext<ApplicationDbContext>();
             services.AddAuthentication(options =>options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme
-            ).AddCookie();
+            ).AddCookie()
+            .AddGoogle
+                (
+                googleOptions =>
+                {
+                    googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
+                    googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+                }
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

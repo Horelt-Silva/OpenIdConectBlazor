@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7MbuHywt+L5t0w2P7Kqyxm0qAKG1TPqseWfhgn7GEA5foYCjJzKkLnoQxb+EgxF2nIuAOBy1eI4LjaPzjtARYw==",
+  "dgSpecHash": "ljPrWjVaWFkDJSQsRfKgP+22/K3OU4c7nlaWkmJoVsW2okTTrcbU/XNmkEvU5brJpTKJeNPGPzZhxMrK381W5Q==",
   "success": true,
   "projectFilePath": "D:\\IngSoftware\\OpenIdConectBlazor\\Server\\OpenIdConectBlazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.5\\microsoft.aspnetcore.authentication.google.5.0.5.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.5\\microsoft.aspnetcore.authorization.5.0.5.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.5\\microsoft.aspnetcore.components.5.0.5.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.5\\microsoft.aspnetcore.components.analyzers.5.0.5.nupkg.sha512",

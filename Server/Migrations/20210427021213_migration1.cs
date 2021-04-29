@@ -2,7 +2,7 @@
 
 namespace OpenIdConectBlazor.Server.Migrations
 {
-    public partial class migracion1 : Migration
+    public partial class migration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

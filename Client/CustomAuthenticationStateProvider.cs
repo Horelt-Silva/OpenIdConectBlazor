@@ -23,7 +23,9 @@ namespace OpenIdConectBlazor.Client
         }
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
-            User currentUser = await httpClient.GetFromJsonAsync<User>("user/getcurrentuser");
+            Uri Uri = new Uri("https://localhost:44357/user/getcurrentusere");
+            User currentUser = await httpClient.GetFromJsonAsync<User>(Uri.AbsoluteUri);
+            Console.WriteLine("Si hice la peticion");
             if (currentUser != null && currentUser.Email != null)
             {
                 //create a claim
@@ -36,9 +38,13 @@ namespace OpenIdConectBlazor.Client
                 var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                 return new AuthenticationState(claimsPrincipal);
 
+
+ 
+
             }
             else
             {
+                Console.WriteLine("bot");
                 return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
             }
         }

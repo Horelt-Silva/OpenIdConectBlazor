@@ -126,7 +126,7 @@ using System.Security.Claims;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
+#line 28 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Profile.razor"
       
     //recuerda que no estoy utilizando el profileview model del video
 
@@ -137,7 +137,7 @@ using System.Security.Claims;
     {
         var authState = await authenticationState;
         var user = authState.User;
-
+        Console.WriteLine("aqui estoy");
         if (user.Identity.IsAuthenticated)
         {
             var claim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier);
@@ -147,9 +147,14 @@ using System.Security.Claims;
             Console.WriteLine(id);
 
             var userResponse= await UserManager.GetUser(id);
+
             if (userResponse!=null)
             {
                 User =(User)userResponse;
+            }
+            else
+            {
+                Navigation.NavigateTo("/");
             }
             //user = (User)x;
             //var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);
@@ -180,6 +185,7 @@ using System.Security.Claims;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager Navigation { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserManager UserManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositories repository { get; set; }

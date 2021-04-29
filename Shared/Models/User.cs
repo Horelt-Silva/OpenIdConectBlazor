@@ -18,5 +18,6 @@ namespace OpenIdConectBlazor.Shared.Models
         public string AboutMe { get; set; }
         public long? Notifications { get; set; }
 
+
     }
 }

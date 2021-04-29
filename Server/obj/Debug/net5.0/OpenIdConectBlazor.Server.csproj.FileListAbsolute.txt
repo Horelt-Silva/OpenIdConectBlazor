@@ -90,3 +90,4 @@ D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Ser
 D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\ref\OpenIdConectBlazor.Server.dll
 D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.pdb
 D:\IngSoftware\OpenIdConectBlazor\Server\obj\Debug\net5.0\OpenIdConectBlazor.Server.genruntimeconfig.cache
+D:\IngSoftware\OpenIdConectBlazor\Server\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll

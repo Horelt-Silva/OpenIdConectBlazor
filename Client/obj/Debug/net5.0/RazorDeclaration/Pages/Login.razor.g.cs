@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.Components.Authorization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Login.razor"
+#line 29 "d:\IngSoftware\OpenIdConectBlazor\Client\Pages\Login.razor"
       
     User user = new User();
     //[CascadingParameter]
@@ -153,6 +153,10 @@ using Microsoft.AspNetCore.Components.Authorization;
     public async Task Create()
     {
         await UserManager.LoginUser(user, ()=>this.navigation.NavigateTo("/profile", true));
+    }
+    private void LoginGoogle()
+    {
+        navigation.NavigateTo("user/GoogleSignIn", true);
     }
 
 

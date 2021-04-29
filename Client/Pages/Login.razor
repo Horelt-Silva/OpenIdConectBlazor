@@ -20,6 +20,9 @@
         <div class="row">
             <button class="btn btn-primary" @onclick="Create">Login</button>
         </div>
+        <div class="row">
+            <button class="btn btn-primary" @onclick="LoginGoogle">Login con google</button>
+        </div>
     </div>
 </EditForm>
 
@@ -56,6 +59,10 @@
     public async Task Create()
     {
         await UserManager.LoginUser(user, ()=>this.navigation.NavigateTo("/profile", true));
+    }
+    private void LoginGoogle()
+    {
+        navigation.NavigateTo("user/GoogleSignIn", true);
     }
 
 }

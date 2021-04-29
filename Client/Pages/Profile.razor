@@ -4,6 +4,7 @@
 @inject IRepositories repository;
 @inject IJSRuntime JsRuntime;
 @inject IUserManager UserManager;
+@inject NavigationManager Navigation;
 <EditForm model="user">
     <div class="d-flex flex-column">
         <div class="row">Register</div>
@@ -34,7 +35,7 @@
     {
         var authState = await authenticationState;
         var user = authState.User;
-
+        Console.WriteLine("aqui estoy");
         if (user.Identity.IsAuthenticated)
         {
             var claim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier);
@@ -44,9 +45,14 @@
             Console.WriteLine(id);
 
             var userResponse= await UserManager.GetUser(id);
+
             if (userResponse!=null)
             {
                 User =(User)userResponse;
+            }
+            else
+            {
+                Navigation.NavigateTo("/");
             }
             //user = (User)x;
             //var HttpResponse = await repository.Get<User>("https://localhost:44357/user/getprofile/"+id);

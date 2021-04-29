@@ -140,39 +140,6 @@
         }
       },
       {
-        "HashCode": 1150743061,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Register",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Register"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register"
-        }
-      },
-      {
-        "HashCode": 1271032247,
-        "Kind": "Components.Component",
-        "Name": "OpenIdConectBlazor.Client.Pages.Register",
-        "AssemblyName": "OpenIdConectBlazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "OpenIdConectBlazor.Client.Pages.Register"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 2041912226,
         "Kind": "Components.Component",
         "Name": "OpenIdConectBlazor.Client.Pages.Profile",
@@ -202,6 +169,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Profile",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1150743061,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Register",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register"
+        }
+      },
+      {
+        "HashCode": 1271032247,
+        "Kind": "Components.Component",
+        "Name": "OpenIdConectBlazor.Client.Pages.Register",
+        "AssemblyName": "OpenIdConectBlazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OpenIdConectBlazor.Client.Pages.Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "OpenIdConectBlazor.Client.Pages.Register",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
